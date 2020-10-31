@@ -28,7 +28,7 @@
       "lookup": "properties.postal",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/archive/crime_count_by_state.csv"
+          "url": "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/csv/crime_count_by_state.csv"
         },
         "key": "state",
         "fields": ["count"]
