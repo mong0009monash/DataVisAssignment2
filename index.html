@@ -7,11 +7,13 @@
   </head>
   <body>
     <div id="vis1"></div>
-
+    <div id="vis2"></div>
     <script type="text/javascript">
       var v1 = "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/js/police_fatal_shooting_map.json"
       vegaEmbed('#vis1', v1).then(function(result){}).catch(console.error);
-	
+
+      var v2 = "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/js/police_fatal_shooting_by_gender_and_age.json"
+      vegaEmbed('#vis2', v2).then(function(result){}).catch(console.error);
     </script>
   </body>
 </html>
