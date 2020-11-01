@@ -33,5 +33,5 @@
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}, "background" : "lightgrey"}
 }
