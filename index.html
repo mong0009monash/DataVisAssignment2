@@ -5,22 +5,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- custom style-->
     <style>
         *{
-            font-family: 'Merriweather', sans-serif;
+            font-family: 'Lato', sans-serif;
         }
         h1{
             font-size: 2.5em;
-            font-family: 'Merriweather', serif;
+            font-family: 'Lato', serif;
             color: black;
 			width: 1000%;
         }
         h2{
-            font-family: 'Merriweather', serif;
+            font-family: 'Lato', serif;
         }
         p{
             font-size: 1.2em;
@@ -141,11 +139,8 @@
         var vis4 = "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/js/police_fatal_case_of_race.json";
 
         vegaEmbed('#map', vis1, {"actions": false}).then(function(result) {}).catch(console.error);
-        
         vegaEmbed('#divergingBarChart', vis2, {"actions": false}).then(function(result) {}).catch(console.error);
-
         vegaEmbed('#streamGraph', vis3, {"actions": false}).then(function(result) {}).catch(console.error);
-
         vegaEmbed('#donutGraph', vis4, {"actions": false}).then(function(result) {}).catch(console.error);
     </script>
 </body>
