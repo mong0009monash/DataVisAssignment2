@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 500,
   "height": 500,
-  "title": "Arm usage in fatal shootings (Interactable legend)",
+  "title": "Arm usage in fatal cases (Interactable legend)",
   "data": {
     "url": "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/csv/shootings.csv"
   },
