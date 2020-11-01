@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Death propotion by race",
+  "height": 500,
+  "width": 750,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/csv/race_fatal_count.csv"
+  },
+  "params": [
+    {
+      "name": "YearSlider",
+      "bind": {"input": "range", "min": 2015, "max": 2020, "step": 1}
+    }
+  ],
+  "transform": [
+    {"calculate": "year(datum.year)", "as": "Year"},
+    {"filter": "datum.year == YearSlider"}
+  ],
+  "mark": {"type": "arc", "innerRadius": 170},
+  "encoding": {
+    "theta": {"field": "count", "type": "quantitative"},
+    "color": {"field": "race", "type": "nominal"},
+    "tooltip": [
+      {"field": "race", "type": "nominal"},
+      {"field": "count", "type": "quantitative"}
+    ]
+  },
+  "view": {"stroke": null},
+  "config": {}
+}
