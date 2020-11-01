@@ -35,5 +35,5 @@
     },
     "tooltip": [{"field": "arms", "type": "quantitative", "aggregate": "sum"}]
   },
-  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}, "background" : "lightgrey"}
 }
