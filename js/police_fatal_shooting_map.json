@@ -36,5 +36,5 @@
     },
     {"calculate": "datum.count", "as": "Count"}
   ],
-  "config": {}
+  "config": {"background" : "lightgrey"}
 }
