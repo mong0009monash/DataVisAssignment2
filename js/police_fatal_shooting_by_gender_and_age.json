@@ -8,7 +8,7 @@
     {"calculate": "datum.gender == 'F' ? 'F' : 'M'", "as": "gender"},
     {"calculate": "datum.gender == 'F' ? -1 : 1", "as": "subject"}
   ],
-  "width": 700,
+  "width": 500,
   "height": 500,
   "layer": [
     {
