@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 750,
+  "height": 500,
+  "title": "Arm usage in fatal shootings (Interactable legend)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mong0009monash/DataVisAssignment2/master/csv/shootings.csv"
+  },
+  "mark": {"type": "area", "clip": true},
+  "transform": [{"calculate": "datum.arms_category ?  1 : 1", "as": "arms"}],
+  "selection": {
+    "arm_category": {
+      "type": "multi",
+      "fields": ["arms_category"],
+      "bind": "legend"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "timeUnit": "yearmonth",
+      "axis": {"domain": false, "format": "%Y", "tickSize": 0}
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "arms",
+      "stack": "center",
+      "scale": {"domain": [1420, 1470]},
+      "axis": null
+    },
+    "color": {"field": "arms_category", "scale": {"scheme": "category20b"}},
+    "opacity": {
+      "condition": {"selection": "arm_category", "value": 1},
+      "value": 0.3
+    },
+    "tooltip": [{"field": "arms", "type": "quantitative", "aggregate": "sum"}]
+  },
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}
