@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Death propotion by race",
+  "title": "Death proportion by race",
   "width" : 500,
   "height" : 500,
   "data": {
